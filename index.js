@@ -2,7 +2,7 @@
 function init(){
     var scene = new THREE.Scene();
     scene.fog = new THREE.FogExp2(0x444444, 0.18);
-    
+    scene.physicallyCorrectLights = true;
     var box = getBox(1,1,1);   
     var plane = getPlane(10,10);
     var sphere = getSphere(0.5);
